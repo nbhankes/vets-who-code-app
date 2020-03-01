@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "repository": "Vets-Who-Code/vwc-site",
   "dependencies": {
+    "@contentful/rich-text-react-renderer": "13.4.0",
     "babel-preset-gatsby": "0.2.0",
+    "dotenv": "8.2.0",
     "gatsby": "2.11.7",
     "gatsby-background-image": "0.7.6",
     "gatsby-image": "2.2.3",
@@ -15,6 +17,7 @@
     "gatsby-plugin-prefetch-google-fonts": "1.4.2",
     "gatsby-plugin-react-helmet": "3.1.0",
     "gatsby-plugin-sharp": "2.2.1",
+    "gatsby-source-contentful": "2.1.89",
     "gatsby-source-filesystem": "2.1.1",
     "gatsby-transformer-sharp": "2.2.0",
     "generate": "0.14.0",
@@ -27,6 +30,7 @@
     "react-modal": "3.8.2",
     "react-slick": "0.24.0",
     "react-toastify": "5.3.1",
+    "reading-time": "1.2.0",
     "sharp": "0.22.1",
     "slick-carousel": "1.8.1",
     "typeface-lato": "0.0.54",
@@ -44,6 +48,7 @@
     "format:src": "prettier --write \"src/**/*.js\"",
     "format:test": "prettier --write \"tests/**/*.js\"",
     "format": "npm run format:src && npm run format:test",
+    "gen:icon": "node scripts/build-icon-json.js",
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --env=jsdom --coverage",
@@ -58,6 +63,7 @@
     "babel-eslint": "10.0.2",
     "babel-jest": "24.8.0",
     "babel-preset-gatsby-package": "0.2.0",
+    "chalk": "3.0.0",
     "eslint": "6.0.1",
     "eslint-config-prettier": "6.0.0",
     "eslint-plugin-prettier": "3.1.0",
@@ -68,7 +74,8 @@
     "jest": "24.8.0",
     "jest-dom": "3.5.0",
     "lint-staged": "9.0.0",
-    "react-test-renderer": "16.8.6"
+    "react-test-renderer": "16.8.6",
+    "svgson": "4.0.0"
   },
   "lint-staged": {
     "src/**/*.js": [

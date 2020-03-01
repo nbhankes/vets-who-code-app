@@ -61,9 +61,9 @@ $ yarn test
 <br>
 
 ```sh
-$ watchman shutdown-server
-$ brew update
-$ brew reinstall watchman
+~ watchman shutdown-server
+~ brew update
+~ brew reinstall watchman
 ```
 </details>
 

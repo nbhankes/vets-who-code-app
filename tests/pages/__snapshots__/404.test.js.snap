@@ -160,10 +160,7 @@ exports[`<NotFoundPage /> should render correctly 1`] = `
               role="menuitem"
             >
               <a
-                href="https://medium.com/vets-who-code"
-                rel="noopener noreferrer"
-                target="_blank"
-                without="true"
+                href="/blog"
               >
                 <span>
                   Blog
@@ -216,7 +213,8 @@ exports[`<NotFoundPage /> should render correctly 1`] = `
                     >
                       <svg
                         aria-hidden="true"
-                        data-icon="facebook"
+                        class=""
+                        data-icon="facebook-f"
                         data-prefix="fab"
                         focusable="false"
                         height="14"
@@ -241,6 +239,7 @@ exports[`<NotFoundPage /> should render correctly 1`] = `
                     >
                       <svg
                         aria-hidden="true"
+                        class=""
                         data-icon="twitter"
                         data-prefix="fab"
                         focusable="false"
@@ -266,6 +265,7 @@ exports[`<NotFoundPage /> should render correctly 1`] = `
                     >
                       <svg
                         aria-hidden="true"
+                        class=""
                         data-icon="codepen"
                         data-prefix="fab"
                         focusable="false"
@@ -291,6 +291,7 @@ exports[`<NotFoundPage /> should render correctly 1`] = `
                     >
                       <svg
                         aria-hidden="true"
+                        class=""
                         data-icon="instagram"
                         data-prefix="fab"
                         focusable="false"
@@ -316,7 +317,8 @@ exports[`<NotFoundPage /> should render correctly 1`] = `
                     >
                       <svg
                         aria-hidden="true"
-                        data-icon="linkedin"
+                        class=""
+                        data-icon="linkedin-in"
                         data-prefix="fab"
                         focusable="false"
                         height="14"
@@ -341,6 +343,7 @@ exports[`<NotFoundPage /> should render correctly 1`] = `
                     >
                       <svg
                         aria-hidden="true"
+                        class=""
                         data-icon="github"
                         data-prefix="fab"
                         focusable="false"
@@ -517,6 +520,7 @@ exports[`<NotFoundPage /> should render correctly 1`] = `
                 >
                   <svg
                     aria-hidden="true"
+                    class=""
                     data-icon="copyright"
                     data-prefix="fab"
                     focusable="false"
@@ -552,6 +556,7 @@ exports[`<NotFoundPage /> should render correctly 1`] = `
                     >
                       <svg
                         aria-hidden="true"
+                        class=""
                         data-icon="heart"
                         data-prefix="fab"
                         focusable="false"
