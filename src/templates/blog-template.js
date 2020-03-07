@@ -121,25 +121,34 @@ const Blog = ({ data, pageContext }) => {
           display: 'flex',
           justifyContent: 'space-around',
           alignItems: 'center',
-          maxWidth: 300,
           margin: '0 auto',
         }}
       >
-        {!isFirstPage && (
-          <Link to={prevPage} rel="prev">
-            Previous Page
-          </Link>
-        )}
-        {Array.from({ length: totalPages }, (_, index) => (
-          <Link key={index} to={`/blog/${index === 0 ? '' : index + 1}`}>
-            {index + 1}
-          </Link>
-        ))}
-        {!isLastPage && (
-          <Link to={nextPage} rel="next">
-            Next Page
-          </Link>
-        )}
+        <nav aria-label="Page navigation">
+          <ul className="pagination">
+            {!isFirstPage && (
+              <li>
+                <Link to={prevPage} rel="prev">
+                  <span aria-hidden="true">&laquo;</span>
+                </Link>
+              </li>
+            )}
+            {Array.from({ length: totalPages }, (_, index) => (
+              <li>
+                <Link key={index} to={`/blog/${index === 0 ? '' : index + 1}`}>
+                  {index + 1}
+                </Link>
+              </li>
+            ))}
+            {!isLastPage && (
+              <li>
+                <Link to={nextPage} rel="next">
+                  <span aria-hidden="true">&raquo;</span>
+                </Link>
+              </li>
+            )}
+          </ul>
+        </nav>
       </div>
     </Layout>
   )
