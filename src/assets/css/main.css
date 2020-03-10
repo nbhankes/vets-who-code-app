@@ -45,10 +45,10 @@ h4,
 h5,
 h6 {
   color: #091F40;
-  font-family: "Roboto Slab", serif;
+  font-family: "Open Sans", "Sans Serif";
 }
 .font-alt {
-  font-family: "Roboto Slab", serif;
+  font-family: "Open Sans", "Sans Serif";
 }
 .logo_holder {
   background: #FFFFFF;
@@ -1783,13 +1783,13 @@ uneditable-input:focus {
 }
 .fluid-grid h2 {
   color: #FFFFFF;
-  font-family: "Roboto Slab", serif;
+  font-family: "Open Sans", "Sans Serif";
   font-size: 2.625rem; /*42px*/
   margin: 0;
 }
 .fluid-grid span {
   color: #FFFFFF;
-  font-family: "Roboto Slab", serif;
+  font-family: "Open Sans", "Sans Serif";
   font-size: 1.3125rem; /*21px*/
 }
 .fluid-grid:hover {
