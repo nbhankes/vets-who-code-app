@@ -1,6 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react'
 import Link from 'gatsby-link'
 import FluidImage from '../FluidImage'
+import { ThemeToggler } from 'gatsby-plugin-dark-mode'
 
 import './nav.css'
 
@@ -113,6 +114,20 @@ function Nav() {
               <Link to="/blog">
                 <span>Blog</span>
               </Link>
+            </li>
+            <li>
+              <ThemeToggler>
+                {({ theme, toggleTheme }) => (
+                  <label>
+                    <input
+                      type="checkbox"
+                      onChange={e => toggleTheme(e.target.checked ? 'dark' : 'light')}
+                      checked={theme === 'dark'}
+                    />{' '}
+            Dark mode
+                  </label>
+                )}
+              </ThemeToggler>
             </li>
           </ul>
         </div>

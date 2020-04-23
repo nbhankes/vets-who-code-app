@@ -175,6 +175,15 @@ exports[`<Layout /> should render correctly 1`] = `
                 </span>
               </a>
             </li>
+            <li>
+              <label>
+                <input
+                  type="checkbox"
+                />
+                 
+                Dark mode
+              </label>
+            </li>
           </ul>
         </div>
       </div>
