@@ -93,3 +93,11 @@
     width: auto;
   }
 }
+
+a > span.skip {
+  color: #091F40;
+}
+
+a:focus > span.skip {
+  color: rgba(255, 255, 255, 0.75);
+}

@@ -11,12 +11,12 @@ function BlogPostLink({ title, author, publishedDate, slug, description, feature
   const excerpt = description.content[0].content[0].value
 
   return (
+    <Link to={`/blog/${slug}`}>
     <article className="post">
       <div className="row">
         <div className="col-md-2" />
         <div className="col-md-8">
           <div className="entry-meta">
-            <Link to={`/blog/${slug}`} hidefocus="true" style={{ outline: 'none' }}>
               <Image
                 className="img-responsive"
                 alt={featureImage.title}
@@ -24,8 +24,6 @@ function BlogPostLink({ title, author, publishedDate, slug, description, feature
                 style={{ borderRadius: 4 }}
               />
               <h4 className="entry-title">{title}.</h4>
-            </Link>
-
             <div className="entry-meta-data">
               <span className="author" style={{ paddingRight: 4 }}>
                 {' '}
@@ -44,20 +42,10 @@ function BlogPostLink({ title, author, publishedDate, slug, description, feature
           <div className="entry-content">
             <p>{excerpt}</p>
           </div>
-
-          <div className="entry-meta clearfix">
-            <Link
-              to={`/blog/${slug}`}
-              className="btn btn-charity-default btn-read-more"
-              hidefocus="true"
-              style={{ outline: 'none' }}
-            >
-              <span>Read More</span>
-            </Link>
-          </div>
         </div>
       </div>
     </article>
+    </Link>
   )
 }
 

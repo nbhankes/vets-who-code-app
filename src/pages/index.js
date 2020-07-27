@@ -16,6 +16,24 @@ function IndexPage() {
     return () => (current = false)
   }, [])
 
+  useEffect(() => {
+    let linkedchat = document.getElementById('linkedchat-button')
+  
+    linkedchat.tabIndex=0
+    linkedchat.addEventListener("keypress", event => {
+      if (event.keyCode == 13) {
+        window.linkedchat.openChat()
+      }
+    })
+
+    document.addEventListener("keydown", event => {
+      if (event.keyCode === 27) {
+        window.linkedchat.closeChat()
+      }
+    })
+
+  })
+
   const onClientEntry = () => {
     // IntersectionObserver polyfill for gatsby-background-image (Safari, IE)
     if (window !== undefined) {

@@ -71,6 +71,11 @@ function Nav() {
           id="main-nav-collapse"
           aria-expanded={isNavOpen ? 'true' : 'false'}
         >
+            <li role = "menuitem">
+              <Link to = "#our_stories" >
+                <span class="skip">Skip To Main</span> 
+              </Link>
+            </li>
           <ul className="nav navbar-nav navbar-right" role="menu" id="navbar-list">
             <li role="menuitem" className="donate">
               <Link to="/">
