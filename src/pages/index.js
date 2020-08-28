@@ -6,6 +6,7 @@ import Countdown from '../components/Countdown'
 import Header from '../components/Header'
 import FluidImage from '../components/FluidImage'
 import { SubscribeForm, onSubmitSuccess, onSubmitError } from '../components/Forms'
+import { FaCode } from 'react-icons/fa'
 
 function IndexPage() {
   useEffect(() => {
@@ -18,20 +19,22 @@ function IndexPage() {
 
   useEffect(() => {
     let linkedchat = document.getElementById('linkedchat-button')
-  
-    linkedchat.tabIndex=0
-    linkedchat.addEventListener("keypress", event => {
-      if (event.keyCode == 13) {
-        window.linkedchat.openChat()
-      }
-    })
 
-    document.addEventListener("keydown", event => {
-      if (event.keyCode === 27) {
-        window.linkedchat.closeChat()
-      }
-    })
+    if (linkedchat !== null) {
+      linkedchat.tabIndex = 0
+      linkedchat.addEventListener('keypress', event => {
+        if (event.keyCode === 13) {
+          window.linkedchat.openChat()
+        }
+      })
 
+      document.addEventListener('keydown', event => {
+        if (event.keyCode === 27) {
+          window.linkedchat.closeChat()
+          linkedchat.focus()
+        }
+      })
+    }
   })
 
   const onClientEntry = () => {
@@ -117,8 +120,8 @@ function IndexPage() {
             <div className="featured-heading text-center">
               <h2 className="dark_color">
                 RETOOL
-                <i className="fa fa-code" aria-hidden="true" /> RETRAIN
-                <i className="fa fa-code" aria-hidden="true" /> RELAUNCH
+                <FaCode size={24} /> RETRAIN
+                <FaCode size={24} /> RELAUNCH
               </h2>
             </div>
             <div className="col-sm-12 our_mission_content text-center">

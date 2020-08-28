@@ -12,11 +12,11 @@ function BlogPostLink({ title, author, publishedDate, slug, description, feature
 
   return (
     <Link to={`/blog/${slug}`}>
-    <article className="post">
-      <div className="row">
-        <div className="col-md-2" />
-        <div className="col-md-8">
-          <div className="entry-meta">
+      <article className="post">
+        <div className="row">
+          <div className="col-md-2" />
+          <div className="col-md-8">
+            <div className="entry-meta">
               <Image
                 className="img-responsive"
                 alt={featureImage.title}
@@ -24,27 +24,27 @@ function BlogPostLink({ title, author, publishedDate, slug, description, feature
                 style={{ borderRadius: 4 }}
               />
               <h4 className="entry-title">{title}.</h4>
-            <div className="entry-meta-data">
-              <span className="author" style={{ paddingRight: 4 }}>
-                {' '}
-                by <span style={{ outline: 'none', color: '#C5203E' }}>{author}</span>
-              </span>
-
-              <time className="entry-date" dateTime="">
-                <span className="blog-list-icon">
-                  <FaRegCalendarAlt color="#999999" />
+              <div className="entry-meta-data">
+                <span className="author" style={{ paddingRight: 4 }}>
+                  {' '}
+                  by <span style={{ outline: 'none', color: '#C5203E' }}>{author}</span>
                 </span>
-                {publishedDate}
-              </time>
+
+                <time className="entry-date" dateTime="">
+                  <span className="blog-list-icon">
+                    <FaRegCalendarAlt color="#999999" />
+                  </span>
+                  {publishedDate}
+                </time>
+              </div>
+            </div>
+
+            <div className="entry-content">
+              <p>{excerpt}</p>
             </div>
           </div>
-
-          <div className="entry-content">
-            <p>{excerpt}</p>
-          </div>
         </div>
-      </div>
-    </article>
+      </article>
     </Link>
   )
 }
