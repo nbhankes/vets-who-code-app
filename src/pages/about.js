@@ -38,7 +38,7 @@ function About() {
               <h1 className="story-title">About Us</h1>
               <p>
                 <i>
-                  #VetsWhoCode Is a Non-ForProfit where veterans teach veterans how to program and
+                  #VetsWhoCode is a non-profit where veterans teach veterans how to program and
                   get jobs.
                 </i>
               </p>
@@ -114,7 +114,7 @@ function About() {
                 <p className="story-last">
                   As our country is going through this unprecedented time with COVID-19, people are
                   wanting to learn the skills of today and tomorrow to future-proof themselves so
-                  that they can provide for thier families. Furthermore due to the nature of
+                  that they can provide for their families. Furthermore due to the nature of
                   for-profit code schools many are just now learning how to do the work remotely,
                   which we have been doing for years. As a result we are having an unprecendented
                   amount of applicants and are looking to expand our abilities to support more
